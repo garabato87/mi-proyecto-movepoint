@@ -319,6 +319,9 @@ font-family*/
     .carousel .carousel-caption {   
         top: 10%;
     }
+    .contacto p{
+        font-size: 12px ;
+    }
 }
 
 
