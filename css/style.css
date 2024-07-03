@@ -1,0 +1,324 @@
+/*RESET*
+padding-margin
+font-size
+font-family*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+ /*Encabezado*/
+.encabezado{
+    color: #ffffff;
+    background-color:#0d0d0d00;
+    position: fixed; /*al scrollear permanece fijo en pantalla*/
+    width: 100%; /*ocupamos el 100% de ancho*/
+    display: flex; /*Necesario para configurar la box*/
+    flex-flow: row wrap; /*es una abreviatura de las propiedades flex-direction: row y flex-wrap: nowrap. Flex-wrap especifica si los elementos "hijos" deben permanecer en una misma línea o pueden fluir en varias líneas. Si se permite la cobertura (wrap), esta propiedad también permite controlar la dirección en la que se apilarán los elementos. */
+    justify-content: space-around; /*Separa el contenido*/
+    align-items: center; /*alinea los items, en este caso center lo hace en el centro verticalmente hablando*/
+    z-index: 1;
+
+}
+
+.encabezado .titulo-nav{
+    font-family: "Nunito", sans-serif;
+    font-style: oblique;  
+    align-self: center ;
+    font-size: 200% ;
+}
+
+.encabezado .menu {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end ;
+    align-items: center;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.encabezado .li{
+    font-family: "Nunito", sans-serif;
+    list-style: none;
+    
+}
+.encabezado .li:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff ;
+    background-color: #000000;
+    border-radius: 1em;
+}
+.encabezado .button{
+    fill: #ffffff;
+    display: none;
+}
+.encabezado .svg{
+    width: 25px;
+    height: 20px;
+    padding: 5px;
+}
+
+.active { /*background del html del nav actual*/
+    
+    border-radius: 10px;
+    background-color: #c2ad43;
+}
+
+.link1 { /*Link del nav*/
+    margin: 0.3em;
+    color: #ffffff;
+    text-decoration-line: none;
+    font-size: 14px;
+
+}
+/*presentacion*/
+
+.main{
+    background-color: #000000;
+}
+.presentacion-container {
+    background-image: url(../media/background2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover ;
+    background-position: center ;
+    border-bottom: 1px solid white;
+    border-radius: 2em;
+}
+.presentacion{
+    margin-left: 5%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start ;
+    flex-flow: column wrap;
+    
+    
+    
+}
+.presentacion h1{
+    font-size: 3em;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+.presentacion p{
+    text-align: center;
+    color: #F2F2F2;
+    margin-top: 1em;
+}
+.presentacion button {
+    margin-top: 3em;
+    
+}
+.presentacion button a {
+    color: #F2F2F2;
+    text-decoration: none;   
+}
+
+
+/*actividades*/
+
+.carousel img {
+    filter: brightness(30%);
+    
+
+}
+.carousel .carousel-caption h2 {
+    align-content: center;
+    color: #ffff00;
+}
+.carousel .carousel-caption p {
+    color: #F2F2F2;
+}
+.carousel .carousel-caption {
+    top: 50%;
+}
+
+
+
+
+/*footer*/
+
+.footer {
+    color: #6f6f6f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+}
+.contacto{
+    padding: 20px;
+    width: auto ;
+}
+.map {
+    height: 200px;
+    width: 400px;
+}
+
+
+/*css html prueba-movepoint*/
+.prueba-container{
+    background-image: url(../media/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2em;
+    position: relative;
+    top: 60vh;
+    color: #ffff00;
+}
+.formulario{
+    background-color: #2e2e3ae0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.form {
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+}
+.rellenar {
+    width: 50%;
+
+}
+.col-md-12 {
+    margin-top: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+/*css html sumateya*/
+
+.sumate{
+    background-image: url(../media/funcional.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.button-sumate {
+    margin-top: 3em
+}
+
+
+
+.sumate-entrena{
+    text-align: center;
+    padding-top: 3em;
+    color: #D97D0D ;
+    
+    
+}
+.asesor{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.asesor a{
+    text-decoration-line: none;
+}
+
+.row {
+    margin-top: 3em;
+    --bs-gutter-x: 0;
+    justify-content: space-around;
+}
+/*Tablet*/
+@media (max-width: 768px) {
+   
+    
+    .entrenamiento{
+        width: 250px;
+    }
+    /*nav*/
+    .encabezado {
+        background-color: #1c1c1c;
+    }
+    .encabezado .nav {
+        width: 100%;
+        display: none; 
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .encabezado .nav.activo{
+        display: block;
+        
+    }
+    .encabezado .menu{ /*el menu se hace en modo columna*/
+        flex-direction: column;
+    }
+    .encabezado .li{ /*Margin por arriba y por abajo*/
+        margin: 1em 0;
+    }
+    .encabezado .button{ /*Se muestra el boton en esta resolucion*/
+        display: block;
+        cursor: pointer;
+        
+    }
+    /*Inicio*/
+    .presentacion{
+        align-content: center;
+    
+    }
+    /*actividades*/
+    .carousel-caption h2{
+        font-size: 20px;
+    }
+    .carousel-caption p{
+        font-size: 15px;
+    }
+    .carousel .carousel-caption {
+        top: 20%;
+    }
+    /*footer*/
+    .footer {
+        padding-bottom: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    .footer .map {
+        height: 200px;
+        width: 250px;
+        margin-bottom: 30px;
+    }
+    /*Prueba movepoint*/
+    .rellenar {
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    .form {
+        margin-left: 30px;
+        margin-right: 30px;
+       
+    }
+    /*Sumate ya*/
+    .abonos {
+        padding: 20px;
+    }
+}
+/*Mobile*/
+@media (max-width: 576px) {
+    .presentacion h1 {
+        font-size: 2em;
+    }
+    .carousel .carousel-caption {   
+        top: 10%;
+    }
+}
+
+
