@@ -1,0 +1,64 @@
+.encabezado{
+    color: #ffffff;
+    background-color:#0d0d0d00;
+    position: fixed; /*al scrollear permanece fijo en pantalla*/
+    width: 100%; /*ocupamos el 100% de ancho*/
+    display: flex; /*Necesario para configurar la box*/
+    flex-flow: row wrap; /*es una abreviatura de las propiedades flex-direction: row y flex-wrap: nowrap. Flex-wrap especifica si los elementos "hijos" deben permanecer en una misma línea o pueden fluir en varias líneas. Si se permite la cobertura (wrap), esta propiedad también permite controlar la dirección en la que se apilarán los elementos. */
+    justify-content: space-around; /*Separa el contenido*/
+    align-items: center; /*alinea los items, en este caso center lo hace en el centro verticalmente hablando*/
+    z-index: 1;
+    .titulo-nav{
+        font-family: "Nunito", sans-serif;
+        font-style: oblique;  
+        align-self: center ;
+        font-size: 200% ;
+    }
+    .button{
+        fill: #ffffff;
+        display: none;
+        .svg{
+            width: 25px;
+            height: 20px;
+            padding: 5px;
+        }
+    }
+    .menu {
+        background-color: #1c1c1c;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end ;
+        align-items: center;
+        padding-bottom: 0;
+        padding-left: 0;
+        .li{
+            font-family: "Nunito", sans-serif;
+            list-style: none;
+            .link1 { /*Link del nav*/
+                margin: 0.3em;
+                color: #ffffff;
+                text-decoration-line: none;
+                font-size: 14px;
+            
+            }
+            
+        }
+        .li:hover {
+            color: #ffffff;
+            border: 1px solid #ffffff ;
+            background-color: #000000;
+            border-radius: 1em;
+        }
+        .active { /*background del html del nav actual*/
+    
+            border-radius: 10px;
+            background-color: #c2ad43;
+        }
+
+    }
+}
+
+
+
+

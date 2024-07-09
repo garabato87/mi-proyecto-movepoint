@@ -1,0 +1,41 @@
+.main{
+    background-color: #000000;
+}
+.presentacion-container {
+    background-image: url(../media/background2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover ;
+    background-position: center ;
+    border-bottom: 1px solid white;
+    border-radius: 2em;
+    .presentacion{
+        margin-left: 5%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start ;
+        flex-flow: column wrap;
+        h1{
+            font-size: 3em;
+            font-weight: 700;
+            color: #ffffff;
+        
+        }
+        p{
+            text-align: center;
+            color: #F2F2F2;
+            margin-top: 1em;
+        }
+        button {
+            margin-top: 3em;
+            a {
+                color: #F2F2F2;
+                text-decoration: none;   
+            }
+        }
+        
+    }
+}
+

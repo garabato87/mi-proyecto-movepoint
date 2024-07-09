@@ -1,0 +1,16 @@
+/*Footer*/
+.footer {
+    color: #6f6f6f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    .contacto{
+        padding: 20px;
+        width: auto ;
+    }
+    .map {
+        height: 200px;
+        width: 400px;
+    }
+}
