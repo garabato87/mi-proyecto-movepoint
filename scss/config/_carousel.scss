@@ -1,5 +1,5 @@
 /*actividades*/
-.carousel 
+.carousel{
     .carousel-caption {
         top: 50%;
         h2 {
@@ -9,10 +9,12 @@
         p {
             color: #F2F2F2;
         }
-        img {
-            filter: brightness(30%);
-            
-        }
+        
+    }
+    img {
+        filter: brightness(30%);
+        
+    }
 }
 
 

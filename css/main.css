@@ -115,7 +115,7 @@
 .carousel .carousel-caption p {
   color: #F2F2F2;
 }
-.carousel .carousel-caption img {
+.carousel img {
   filter: brightness(30%);
 }
 
