@@ -115,8 +115,7 @@
 .carousel .carousel-caption p {
   color: #F2F2F2;
 }
-
-.carousel img {
+.carousel .carousel-caption img {
   filter: brightness(30%);
 }
 
@@ -163,6 +162,12 @@
   height: 100vh;
   width: 100%;
   text-align: center;
+}
+.sumate .titulo {
+  font-size: 2em;
+  position: relative;
+  top: 60vh;
+  color: #ffff00;
 }
 .sumate .button-sumate {
   margin-top: 3em;
@@ -220,18 +225,16 @@
 
 /*Tablet*/
 @media (max-width: 768px) {
-  /*nav*/
   .encabezado {
     background-color: #1c1c1c;
-  }
-  .encabezado .button { /*Se muestra el boton en esta resolucion*/
-    display: block;
-    cursor: pointer;
   }
   .encabezado .nav {
     width: 100%;
     display: none;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+  .encabezado .nav .activo {
+    display: block;
   }
   .encabezado .nav .menu { /*el menu se hace en modo columna*/
     flex-direction: column;
@@ -239,7 +242,12 @@
   .encabezado .nav .menu .li { /*Margin por arriba y por abajo*/
     margin: 1em 0;
   }
-  .encabezado .nav .menu .activo {
+  .encabezado .button { /*Se muestra el boton en esta resolucion*/
+    display: block;
+    cursor: pointer;
+  }
+  /*nav*/
+  .encabezado .nav.activo {
     display: block;
   }
   /*Inicio*/

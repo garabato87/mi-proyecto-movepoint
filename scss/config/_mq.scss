@@ -1,44 +1,39 @@
 /*Tablet*/
 @media (max-width: 768px) {
-    
-    /*nav*/
     .encabezado {
         background-color: #1c1c1c;
-        .button{ /*Se muestra el boton en esta resolucion*/
-            display: block;
-            cursor: pointer;
-            
-        }
         .nav {
             width: 100%;
             display: none; 
             box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+            .activo{
+                display: block;
+                
+            }
             .menu{ /*el menu se hace en modo columna*/
                 flex-direction: column;
                 .li{ /*Margin por arriba y por abajo*/
                     margin: 1em 0;
                 }
-                .activo{
-                    display: block;
-                }
             }
-            
         }
+        .button{ /*Se muestra el boton en esta resolucion*/
+            display: block;
+            cursor: pointer;
+            
+        }  
     }
-    
-   
-  
-    
+    /*nav*/
+    .encabezado .nav.activo{
+        display: block;
+    }
     /*Inicio*/
     .presentacion-container{
         .presentacion {
             align-content: center;
         }
         align-content: center;
-        
-    
     }
-
     /*actividades*/
     .carousel .carousel-caption {
         top: 20%;
@@ -64,13 +59,11 @@
     /*Prueba movepoint*/
     .rellenar {
         width: 100%;
-        margin-top: 20px;
-        
+        margin-top: 20px;   
     }
     .form {
         margin-left: 30px;
         margin-right: 30px;
-       
     }
     /*Sumate ya*/
     .abonos {
