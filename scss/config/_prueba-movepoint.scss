@@ -1,0 +1,36 @@
+/*css html prueba-movepoint*/
+.prueba-container{
+    background-image: url(../media/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    .titulo {
+        font-size: 2em;
+        position: relative;
+        top: 60vh;
+        color: #ffff00;
+    }
+}
+
+
+.formulario{
+    background-color: #2e2e3ae0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    .form {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 20px;
+        .rellenar {
+            width: 50%;
+        }
+        .col-md-12 {
+            margin-top: 20px;
+            width: 100%;
+            padding-bottom: 50px;
+        }
+    }
+}

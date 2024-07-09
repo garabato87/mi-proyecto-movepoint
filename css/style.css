@@ -253,7 +253,7 @@ font-family*/
         display: none; 
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
-    .encabezado .nav.activo{
+    .encabezado .nav .activo{
         display: block;
         
     }

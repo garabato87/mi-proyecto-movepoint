@@ -1,4 +1,4 @@
-.encabezado{
+.encabezado {
     color: #ffffff;
     background-color:#0d0d0d00;
     position: fixed; /*al scrollear permanece fijo en pantalla*/
@@ -15,34 +15,36 @@
         font-size: 200% ;
     }
     .button{
-        fill: #ffffff;
+        background-color: #1c1c1c;
         display: none;
         .svg{
-            width: 25px;
-            height: 20px;
+            width: 2em;
+            height: 2em;
             padding: 5px;
+            fill: white;
         }
     }
-    .menu {
-        background-color: #1c1c1c;
-        border-radius: 10px;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end ;
-        align-items: center;
-        padding-bottom: 0;
-        padding-left: 0;
-        .li{
-            font-family: "Nunito", sans-serif;
-            list-style: none;
-            .link1 { /*Link del nav*/
-                margin: 0.3em;
-                color: #ffffff;
-                text-decoration-line: none;
-                font-size: 14px;
+    .nav {
+        .menu {
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end ;
+            align-items: center;
+            padding-bottom: 0;
+            padding-left: 0;
+            .li{
+                font-family: "Nunito", sans-serif;
+                list-style: none;
+                .link1 { /*Link del nav*/
+                    margin: 0.3em;
+                    color: #ffffff;
+                    text-decoration-line: none;
+                    font-size: 14px;
             
+                }
             }
-            
         }
         .li:hover {
             color: #ffffff;

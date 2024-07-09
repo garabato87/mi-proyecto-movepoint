@@ -24,15 +24,16 @@
   font-size: 200%;
 }
 .encabezado .button {
-  fill: #ffffff;
+  background-color: #1c1c1c;
   display: none;
 }
 .encabezado .button .svg {
-  width: 25px;
-  height: 20px;
+  width: 2em;
+  height: 2em;
   padding: 5px;
+  fill: white;
 }
-.encabezado .menu {
+.encabezado .nav .menu {
   background-color: #1c1c1c;
   border-radius: 10px;
   display: flex;
@@ -42,23 +43,23 @@
   padding-bottom: 0;
   padding-left: 0;
 }
-.encabezado .menu .li {
+.encabezado .nav .menu .li {
   font-family: "Nunito", sans-serif;
   list-style: none;
 }
-.encabezado .menu .li .link1 { /*Link del nav*/
+.encabezado .nav .menu .li .link1 { /*Link del nav*/
   margin: 0.3em;
   color: #ffffff;
   text-decoration-line: none;
   font-size: 14px;
 }
-.encabezado .menu .li:hover {
+.encabezado .nav .li:hover {
   color: #ffffff;
   border: 1px solid #ffffff;
   background-color: #000000;
   border-radius: 1em;
 }
-.encabezado .menu .active { /*background del html del nav actual*/
+.encabezado .nav .active { /*background del html del nav actual*/
   border-radius: 10px;
   background-color: #c2ad43;
 }
@@ -119,6 +120,75 @@
   filter: brightness(30%);
 }
 
+/*css html prueba-movepoint*/
+.prueba-container {
+  background-image: url(../media/background3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.prueba-container .titulo {
+  font-size: 2em;
+  position: relative;
+  top: 60vh;
+  color: #ffff00;
+}
+
+.formulario {
+  background-color: rgba(46, 46, 58, 0.8784313725);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.formulario .form {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 20px;
+}
+.formulario .form .rellenar {
+  width: 50%;
+}
+.formulario .form .col-md-12 {
+  margin-top: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.sumate {
+  background-image: url(../media/funcional.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.sumate .button-sumate {
+  margin-top: 3em;
+}
+
+.sumate-entrena {
+  text-align: center;
+  padding-top: 3em;
+  color: #D97D0D;
+}
+
+.asesor {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.asesor a {
+  text-decoration-line: none;
+}
+
+.row {
+  margin-top: 3em;
+  --bs-gutter-x: 0;
+  justify-content: space-around;
+}
+
 /*Footer*/
 .footer {
   color: #6f6f6f;
@@ -128,12 +198,104 @@
   background-color: #1c1c1c;
 }
 .footer .contacto {
-  padding: 20px;
   width: auto;
+  padding: 20px;
+}
+.footer .contacto img {
+  width: 100px;
+  height: 100px;
+}
+.footer .contacto svg {
+  width: 16px;
+  height: 16px;
 }
 .footer .map {
   height: 200px;
   width: 400px;
+}
+.footer .map .mapa {
+  width: 100%;
+  height: 100%;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  /*nav*/
+  .encabezado {
+    background-color: #1c1c1c;
+  }
+  .encabezado .button { /*Se muestra el boton en esta resolucion*/
+    display: block;
+    cursor: pointer;
+  }
+  .encabezado .nav {
+    width: 100%;
+    display: none;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+  .encabezado .nav .menu { /*el menu se hace en modo columna*/
+    flex-direction: column;
+  }
+  .encabezado .nav .menu .li { /*Margin por arriba y por abajo*/
+    margin: 1em 0;
+  }
+  .encabezado .nav .menu .activo {
+    display: block;
+  }
+  /*Inicio*/
+  .presentacion-container {
+    align-content: center;
+  }
+  .presentacion-container .presentacion {
+    align-content: center;
+  }
+  /*actividades*/
+  .carousel .carousel-caption {
+    top: 20%;
+  }
+  .carousel .carousel-caption h2 {
+    font-size: 20px;
+  }
+  .carousel .carousel-caption p {
+    font-size: 15px;
+  }
+  /*footer*/
+  .footer {
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+  .footer .map {
+    height: 200px;
+    width: 250px;
+    margin-bottom: 30px;
+  }
+  /*Prueba movepoint*/
+  .rellenar {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .form {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  /*Sumate ya*/
+  .abonos {
+    padding: 20px;
+  }
+}
+/*Mobile*/
+@media (max-width: 576px) {
+  .presentacion h1 {
+    font-size: 2em;
+  }
+  .carousel .carousel-caption {
+    top: 10%;
+  }
+  .contacto p {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

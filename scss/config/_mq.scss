@@ -1,0 +1,91 @@
+/*Tablet*/
+@media (max-width: 768px) {
+    
+    /*nav*/
+    .encabezado {
+        background-color: #1c1c1c;
+        .button{ /*Se muestra el boton en esta resolucion*/
+            display: block;
+            cursor: pointer;
+            
+        }
+        .nav {
+            width: 100%;
+            display: none; 
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+            .menu{ /*el menu se hace en modo columna*/
+                flex-direction: column;
+                .li{ /*Margin por arriba y por abajo*/
+                    margin: 1em 0;
+                }
+                .activo{
+                    display: block;
+                }
+            }
+            
+        }
+    }
+    
+   
+  
+    
+    /*Inicio*/
+    .presentacion-container{
+        .presentacion {
+            align-content: center;
+        }
+        align-content: center;
+        
+    
+    }
+
+    /*actividades*/
+    .carousel .carousel-caption {
+        top: 20%;
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    /*footer*/
+    .footer {
+        padding-bottom: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    .footer .map {
+        height: 200px;
+        width: 250px;
+        margin-bottom: 30px;
+    }
+    /*Prueba movepoint*/
+    .rellenar {
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    .form {
+        margin-left: 30px;
+        margin-right: 30px;
+       
+    }
+    /*Sumate ya*/
+    .abonos {
+        padding: 20px;
+    }
+}
+/*Mobile*/
+@media (max-width: 576px) {
+    .presentacion h1 {
+        font-size: 2em;
+    }
+    .carousel .carousel-caption {   
+        top: 10%;
+    }
+    .contacto p{
+        font-size: 12px ;
+    }
+}
