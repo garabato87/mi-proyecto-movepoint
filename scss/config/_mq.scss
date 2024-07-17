@@ -1,11 +1,11 @@
 /*Tablet*/
 @media (max-width: 768px) {
     .encabezado {
-        background-color: #1c1c1c;
+        background-color: $black;
         .nav {
             width: 100%;
             display: none; 
-            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+            box-shadow: 0 0 0 100vmax black;
             .activo{
                 display: block;
                 
@@ -30,9 +30,25 @@
     /*Inicio*/
     .presentacion-container{
         .presentacion {
+            margin-left: 0;
+            width: 100%;
             align-content: center;
+            
+            h1{
+                font-size: 2em;
+            }
+            p{
+                font-size: 1em;
+            }
         }
-        align-content: center;
+        .presentacion:hover{
+            h1{
+                font-size: 3em;
+            }
+            p{
+                font-size: 1.5em;
+            }
+        }
     }
     /*actividades*/
     .carousel .carousel-caption {
@@ -47,9 +63,7 @@
     /*footer*/
     .footer {
         padding-bottom: 20px;
-        display: flex;
         flex-flow: column wrap;
-        justify-content: space-between;
     }
     .footer .map {
         height: 200px;
@@ -72,8 +86,38 @@
 }
 /*Mobile*/
 @media (max-width: 576px) {
-    .presentacion h1 {
-        font-size: 2em;
+    .encabezado{
+        justify-content: space-evenly;
+        .titulo-nav{
+            font-size: 1.5em;
+        }
+        .logo {
+            height: 80px;
+            width: 80px;
+        }
+        .button{
+            .svg{
+               width: 2em;
+               height: 2em; 
+            }
+        }
+    }
+    .presentacion-container {
+        width: 100%;
+        .presentacion{
+            h1{
+                font-size: 1.5em;
+            }
+        }
+        .presentacion:hover{
+            h1{
+                font-size: 2em;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+     
     }
     .carousel .carousel-caption {   
         top: 10%;

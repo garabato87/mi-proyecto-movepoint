@@ -1,6 +1,9 @@
 //Reset
 /*Reset*/
+@import "./config/vars";
 @import "./config/_reset.scss";
+@import "./config/mixin";
+
 
 
 //Layout
@@ -12,4 +15,4 @@
 @import "./config/footer";
 
 //Media queries
-@import "./config/mq"
+@import "./config/mq";

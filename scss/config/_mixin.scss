@@ -1,0 +1,14 @@
+//@mixin - Declarando el mixin
+//@include - Para invocar este mixin
+@mixin posiciones-imagenes ($pos, $size,$height){
+    background-position: $pos;
+    background-size: $size;
+    height: $height;
+    
+}
+@mixin flex ($flex, $justify, $align){
+    display: flex;
+    flex-flow: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

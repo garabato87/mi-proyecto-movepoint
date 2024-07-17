@@ -1,32 +1,35 @@
 .encabezado {
-    color: #ffffff;
-    background-color:#0d0d0d00;
+    color: $white;
+    background: linear-gradient(to right, #000000, #434343);
     position: fixed; /*al scrollear permanece fijo en pantalla*/
     width: 100%; /*ocupamos el 100% de ancho*/
-    display: flex; /*Necesario para configurar la box*/
-    flex-flow: row wrap; /*es una abreviatura de las propiedades flex-direction: row y flex-wrap: nowrap. Flex-wrap especifica si los elementos "hijos" deben permanecer en una misma línea o pueden fluir en varias líneas. Si se permite la cobertura (wrap), esta propiedad también permite controlar la dirección en la que se apilarán los elementos. */
-    justify-content: space-around; /*Separa el contenido*/
-    align-items: center; /*alinea los items, en este caso center lo hace en el centro verticalmente hablando*/
+    @include flex (row wrap, space-around, center);
     z-index: 1;
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
     .titulo-nav{
         font-family: "Nunito", sans-serif;
         font-style: oblique;  
         align-self: center ;
-        font-size: 200% ;
+        font-size: 2em ;
     }
     .button{
-        background-color: #1c1c1c;
+        background-color: $black;
+        border: none;
         display: none;
         .svg{
-            width: 2em;
-            height: 2em;
+            background-color:  #434343;
+            width: 3em;
+            height: 3em;
             padding: 5px;
-            fill: white;
+            fill: $white;
         }
     }
     .nav {
         .menu {
-            background-color: #1c1c1c;
+            background-color: #00000021;
             border-radius: 10px;
             display: flex;
             flex-flow: row nowrap;
@@ -39,25 +42,24 @@
                 list-style: none;
                 .link1 { /*Link del nav*/
                     margin: 0.3em;
-                    color: #ffffff;
+                    color: $white;
                     text-decoration-line: none;
                     font-size: 14px;
             
                 }
             }
-        }
-        .li:hover {
-            color: #ffffff;
-            border: 1px solid #ffffff ;
-            background-color: #000000;
-            border-radius: 1em;
+            .li:hover {
+                color: $white;
+                border: 1px solid $white ;
+                background-color: $black;
+                border-radius: 1em;
+            }
         }
         .active { /*background del html del nav actual*/
-    
+            
             border-radius: 10px;
             background-color: #c2ad43;
         }
-
     }
 }
 

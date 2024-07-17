@@ -240,10 +240,6 @@ font-family*/
 /*Tablet*/
 @media (max-width: 768px) {
    
-    
-    .entrenamiento{
-        width: 250px;
-    }
     /*nav*/
     .encabezado {
         background-color: #1c1c1c;
