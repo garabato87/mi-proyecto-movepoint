@@ -40,6 +40,14 @@
             .li{
                 font-family: "Nunito", sans-serif;
                 list-style: none;
+                margin: 0 5px ;
+                
+                &:hover{
+                    color: $white;
+                    border: 1px solid $white ;
+                    background-color: $black;
+                    border-radius: 1em;
+                }
                 .link1 { /*Link del nav*/
                     margin: 0.3em;
                     color: $white;
@@ -48,17 +56,10 @@
             
                 }
             }
-            .li:hover {
-                color: $white;
-                border: 1px solid $white ;
-                background-color: $black;
-                border-radius: 1em;
-            }
         }
         .active { /*background del html del nav actual*/
-            
             border-radius: 10px;
-            background-color: #c2ad43;
+            background-color: #ecc607;
         }
     }
 }

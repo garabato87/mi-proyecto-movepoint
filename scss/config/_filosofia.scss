@@ -1,0 +1,16 @@
+.filosofia__container{
+    background-color: $yellow;
+    padding: 20px;
+    text-align: center;
+    .filosofia {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 0;
+            padding: 10px;
+        }
+    }
+}

@@ -51,12 +51,7 @@
 .encabezado .nav .menu .li {
   font-family: "Nunito", sans-serif;
   list-style: none;
-}
-.encabezado .nav .menu .li .link1 { /*Link del nav*/
-  margin: 0.3em;
-  color: #ffffff;
-  text-decoration-line: none;
-  font-size: 14px;
+  margin: 0 5px;
 }
 .encabezado .nav .menu .li:hover {
   color: #ffffff;
@@ -64,9 +59,15 @@
   background-color: #000000;
   border-radius: 1em;
 }
+.encabezado .nav .menu .li .link1 { /*Link del nav*/
+  margin: 0.3em;
+  color: #ffffff;
+  text-decoration-line: none;
+  font-size: 14px;
+}
 .encabezado .nav .active { /*background del html del nav actual*/
   border-radius: 10px;
-  background-color: #c2ad43;
+  background-color: #ecc607;
 }
 
 .main {
@@ -78,8 +79,7 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
-  border-bottom: 1px solid #ffffff;
-  border-radius: 2em;
+  --animate-duration: 2s;
 }
 .presentacion-container .presentacion {
   margin-left: 10%;
@@ -118,18 +118,34 @@
   transition: font-size 1s;
 }
 
+.filosofia__container {
+  background-color: #ffff00;
+  padding: 20px;
+  text-align: center;
+}
+.filosofia__container .filosofia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.filosofia__container .filosofia li {
+  margin: 0;
+  padding: 10px;
+}
+
 /*actividades*/
-.carousel .carousel-caption {
+.desplegable .info-slider {
   top: 50%;
 }
-.carousel .carousel-caption h2 {
+.desplegable .info-slider h2 {
   align-content: center;
   color: #ffff00;
 }
-.carousel .carousel-caption p {
+.desplegable .info-slider p {
   color: #ffffff;
 }
-.carousel img {
+.desplegable img {
   filter: brightness(30%);
 }
 
@@ -164,7 +180,7 @@
   padding: 5px;
   width: 50%;
 }
-.formulario .form .col-md-12 {
+.formulario .form .text__form {
   padding: 5px;
   margin-top: 20px;
   width: 100%;
@@ -214,10 +230,14 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.8470588235);
 }
 .footer .contacto {
   padding: 20px;
+}
+.footer .contacto .link_footer {
+  color: #ffff00;
+  text-decoration: none;
 }
 .footer .contacto figure {
   display: flex;
@@ -286,13 +306,13 @@
     font-size: 1.5em;
   }
   /*actividades*/
-  .carousel .carousel-caption {
+  .desplegable .info-slider {
     top: 20%;
   }
-  .carousel .carousel-caption h2 {
+  .desplegable .info-slider h2 {
     font-size: 20px;
   }
-  .carousel .carousel-caption p {
+  .desplegable .info-slider p {
     font-size: 15px;
   }
   /*footer*/
@@ -321,6 +341,7 @@
 }
 /*Mobile*/
 @media (max-width: 576px) {
+  /*Menu*/
   .encabezado {
     justify-content: space-evenly;
   }
@@ -335,6 +356,7 @@
     width: 2em;
     height: 2em;
   }
+  /*inicio*/
   .presentacion-container {
     width: 100%;
   }
@@ -347,11 +369,37 @@
   .presentacion-container .presentacion:hover p {
     font-size: 1.2em;
   }
-  .carousel .carousel-caption {
-    top: 10%;
+  /*Carrousel*/
+  .desplegable .info-slider {
+    top: 30%;
   }
+  .desplegable .info-slider h2 {
+    font-size: 15px;
+  }
+  .desplegable .info-slider p {
+    font-size: 12px;
+  }
+  /*Footer*/
   .contacto p {
     font-size: 12px;
+  }
+  /*Prueba movepoint*/
+  .formulario .form {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .formulario .form .rellenar {
+    padding: 5px;
+    width: 100%;
+    font-size: 0.75rem;
+  }
+  .formulario .form .row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .desplegable .info-slider {
+    top: 5%;
   }
 }
 

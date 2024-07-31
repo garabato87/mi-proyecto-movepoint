@@ -4,14 +4,15 @@
 .presentacion-container {
     background-image: $bg-img-index;
     @include posiciones-imagenes (center, cover,100vh) ;
-    border-bottom: 1px solid $white;
-    border-radius: 2em;
+    
+    --animate-duration: 2s;
     .presentacion{
         margin-left: 10%;
         height: 100vh;
         width: 50%;
         @include flex (column wrap, center, center);
         align-content: flex-start ;
+        
         h1{
             font-size: 2.5em;
             font-weight: 700;

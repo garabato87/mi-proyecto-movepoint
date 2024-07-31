@@ -4,8 +4,12 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: $black;
+    background-color: #000000d8;
     .contacto{
+        .link_footer {
+            color: $yellow;
+            text-decoration: none;
+        }
         figure {
             display: flex;
             align-items: center;

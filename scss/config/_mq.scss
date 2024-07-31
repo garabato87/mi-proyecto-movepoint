@@ -51,13 +51,15 @@
         }
     }
     /*actividades*/
-    .carousel .carousel-caption {
-        top: 20%;
-        h2{
-            font-size: 20px;
-        }
-        p{
-            font-size: 15px;
+    .desplegable {
+        .info-slider {
+            top: 20%;
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
         }
     }
     /*footer*/
@@ -71,6 +73,7 @@
         margin-bottom: 30px;
     }
     /*Prueba movepoint*/
+   
     .rellenar {
         width: 100%;
         margin-top: 20px;   
@@ -84,8 +87,10 @@
         padding: 20px;
     }
 }
+
 /*Mobile*/
 @media (max-width: 576px) {
+    /*Menu*/
     .encabezado{
         justify-content: space-evenly;
         .titulo-nav{
@@ -102,6 +107,7 @@
             }
         }
     }
+    /*inicio*/
     .presentacion-container {
         width: 100%;
         .presentacion{
@@ -119,10 +125,45 @@
         }
      
     }
-    .carousel .carousel-caption {   
-        top: 10%;
+    /*Carrousel*/
+    .desplegable {
+        .info-slider {
+            top: 30%;
+            h2{
+                font-size: 15px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
     }
+    /*Footer*/
     .contacto p{
         font-size: 12px ;
+    }
+    /*Prueba movepoint*/
+    .formulario{
+        .form {
+            margin-left: 50px;
+            margin-right: 50px;
+            
+            .rellenar {
+                padding: 5px;
+                width: 100%;
+                font-size: 0.75rem;
+                
+            }
+            .row {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .desplegable {
+        .info-slider {
+            top: 5%;
+        }
     }
 }
