@@ -238,7 +238,7 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  background-image: url("/media/background-footer.jpg");
+  background-image: url(/media/background-footer.jpg);
 }
 .footer .contacto {
   padding: 20px;
