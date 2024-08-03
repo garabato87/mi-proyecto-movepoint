@@ -10,7 +10,10 @@
     }
     
     .button-sumate {
-        margin-top: 3em
+        margin-top: 3em;
+        height: 70px;
+        width: 70px;
+
     }
 }
 
@@ -32,4 +35,7 @@
     margin-top: 3em;
     --bs-gutter-x: 0;
     justify-content: space-around;
+    img {
+        width: 100%;
+    }
 }

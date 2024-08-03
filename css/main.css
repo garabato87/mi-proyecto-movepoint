@@ -147,6 +147,7 @@
 }
 .desplegable img {
   filter: brightness(30%);
+  height: 100%;
 }
 
 /*css html prueba-movepoint*/
@@ -176,6 +177,9 @@
   margin-left: 100px;
   margin-right: 100px;
 }
+.formulario .form .enviar {
+  margin: 20px;
+}
 .formulario .form .rellenar {
   padding: 5px;
   width: 50%;
@@ -201,6 +205,8 @@
 }
 .sumate .button-sumate {
   margin-top: 3em;
+  height: 70px;
+  width: 70px;
 }
 
 .sumate-entrena {
@@ -223,6 +229,9 @@
   --bs-gutter-x: 0;
   justify-content: space-around;
 }
+.row img {
+  width: 100%;
+}
 
 /*Footer*/
 .footer {
@@ -230,7 +239,7 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.8470588235);
+  background-image: url(/media/background-footer.png);
 }
 .footer .contacto {
   padding: 20px;
