@@ -4,7 +4,6 @@
 .presentacion-container {
     background-image: $bg-img-index;
     @include posiciones-imagenes (center, cover,100vh) ;
-    
     --animate-duration: 2s;
     .presentacion{
         margin-left: 10%;
