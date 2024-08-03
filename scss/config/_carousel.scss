@@ -2,7 +2,7 @@
 .desplegable{
     .info-slider {
         top: 50%;
-        h2 {
+        h3{
             align-content: center;
             color: $yellow;
         }
@@ -12,7 +12,7 @@
     }
     img {
         filter: brightness(30%);
-        height: 100%;
+        
     }
 }
 
