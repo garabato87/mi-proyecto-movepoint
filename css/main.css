@@ -238,7 +238,7 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  background-image: url(/media/background-footer.png);
+  background-color: rgba(0, 0, 0, 0.8470588235);
 }
 .footer .contacto {
   padding: 20px;
